@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
 

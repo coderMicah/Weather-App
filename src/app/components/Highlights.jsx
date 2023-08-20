@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { WiHumidity, WiStrongWind, WiThermometer } from "weather-icons-react";
 
 function Highlights({ weather }) {
