@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ # Interactive Weather Dashboard
+ 
+## Description:
+An interactive weather dashboard that allows users to search for and
+display the current weather and a 5-day forecast for a specific location. The application 
+retrieve data from a weather API and present it in a visually appealing and informative way.
 
-## Getting Started
+## Requirements:
+### 1. User Interface:
+- Responsive and visually appealing user interface using HTML and CSS.
+- Input field where users can enter the name of a city or location.
+- Current weather conditions, including temperature, weather description,
+humidity, wind speed, and an icon representing the weather.
+- 5-day forecast with each day's date, weather icon, high and low temperatures.
 
-First, run the development server:
+### 2. Functionality:
+- Fetch weather data from a weather API using asynchronous requests.
+- Allow users to submit the city name or location and retrieve weather data upon form
+submission.
+- Convert temperature units between Celsius and Fahrenheit, and ensure a smooth
+transition without reloading the page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### 3. Data Visualization:
+- Use charts or graphs to visually represent temperature trends for the 5-day forecast.
+- Display a graph for hourly temperature variations for the current day.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Geolocation:
+-  Geolocation feature that automatically detects the user's current location and
+displays weather information for that location.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 5. Error Handling:
+- Error handling, such as invalid city names, network errors, or API request
+failures.
+- Provide informative error messages to the user.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 6. Advanced Features :
+- Switch between light and dark themes.
