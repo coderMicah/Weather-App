@@ -10,7 +10,7 @@ import Heading from "./components/Heading";
 export default function Home() {
   const [weather, setWeather] = useState();
   const [weeklyWeather, setWeeklyWeather] = useState();
-  // const [location, setLocation] = useState();
+  const [location, setLocation] = useState();
 
   //use geolocation to locate weather
   useEffect(() => {
@@ -49,16 +49,16 @@ export default function Home() {
   // };
 
   //use ip api to locate weather
-  // useEffect(() => {
-  //   if (!location) {
-  //     fetch("https://geolocation-db.com/json/")
-  //       .then((resp) => resp.json())
-  //       .then(({ latitude, longitude }) => {
-  //         fetchWeatherData({ lat: latitude, lng: longitude });
-  //         fetchWeeklyWeatherData({ lat: latitude, lng: longitude });
-  //       }).catch(err => console.log(err))
-  //   }
-  // },[]);
+  useEffect(() => {
+    if (!location) {
+      fetch("https://geolocation-db.com/json/")
+        .then((resp) => resp.json())
+        .then(({ latitude, longitude }) => {
+          fetchWeatherData({ lat: latitude, lng: longitude });
+          fetchWeeklyWeatherData({ lat: latitude, lng: longitude });
+        }).catch(err => console.log(err))
+    }
+  },[]);
 
   if (!weather)
     return (
